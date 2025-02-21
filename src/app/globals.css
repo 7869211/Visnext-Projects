@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb-light: 0, 0, 0;
+  --background-main-rgb-light: 251, 251, 251;
+  --background-secondary-rgb-light: 255, 255, 255;
+  --dark-border-color: #292929;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  color: rgb(var(--foreground-rgb-light));
+  background: rgb(var(--background-rgb-light));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Add these styles to your globals.css */
+.Toastify__toast-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Toastify__toast {
+  font-family: var(--font-montserrat);
+  font-size: 16px;
+  margin: 0;
+}
+
+.Toastify__toast-body {
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove default toast background */
+.Toastify__toast--success {
+  background: transparent !important;
+}
+
+/* Add custom success icon */
+.Toastify__toast-icon {
+  width: 24px !important;
+  height: 24px !important;
+  background: #ecfdf5;
+  border-radius: 50%;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+}
+
+.Toastify__toast-icon svg {
+  fill: #059669;
+  width: 14px;
+  height: 14px;
+}

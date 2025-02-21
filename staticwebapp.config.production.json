@@ -1,0 +1,24 @@
+{
+  "routes": [
+    {
+      "route": "/",
+      "allowedRoles": ["anonymous"]
+    },
+    {
+      "route": "/create",
+      "allowedRoles": ["anonymous"]
+    },
+    {
+      "route": "/interact",
+      "allowedRoles": ["anonymous"]
+    },
+    {
+      "route": "/invitation",
+      "allowedRoles": ["anonymous"]
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/",
+    "exclude": ["/api/*", "/create", "/interact", "/invitation"]
+  }
+}

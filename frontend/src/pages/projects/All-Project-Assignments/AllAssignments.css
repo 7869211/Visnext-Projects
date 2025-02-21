@@ -1,0 +1,82 @@
+.assignment-container {
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .header h2 {
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .assignment-count {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .table-wrapper {
+    overflow-x: auto;
+  }
+  
+  .assignment-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .assignment-table th,
+  .assignment-table td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .assignment-table th {
+    background-color: #515152;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .assignment-table tbody tr:nth-child(odd) {
+    background-color: #f8f9fa;
+  }
+  
+  .assignment-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .assignment-table .no-users {
+    text-align: center;
+    font-size: 1rem;
+    color: #888;
+    padding: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .header h2 {
+      font-size: 1.5rem;
+    }
+  
+    .assignment-count {
+      font-size: 0.9rem;
+    }
+  
+    .assignment-table th,
+    .assignment-table td {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.9rem;
+    }
+  }
+  

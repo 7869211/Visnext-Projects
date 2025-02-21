@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+.bug-list-container {
+    margin: 20px;
+    font-family:'Poppins';
+  }
+  .Dev-image{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+
+}
+  
+   .title-setting-section{
+    width: 1100px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    border-bottom: 1px solid rgba(221, 226, 228, 1)
+
+   }
+   .title-bugs-section{
+    width:303px;
+    height:68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   }
+  
+   .bug-list-title {
+    font-family: 'Inter';
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.022em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(37, 44, 50, 1);
+    width: 249px;
+    height: 48px;
+    white-space: nowrap;
+    }
+    .bugs-section{
+
+      width:47.97px;
+      height:25.45px;
+      padding: 4.24px 8.48px 4.24px 8.48px;
+      gap: 8.48px;
+      border-radius: 4.24px;
+      opacity: 0px;
+      background: rgba(253, 242, 242, 1);
+      margin-left: 15px;
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(236, 89, 98, 1);
+      font-family: Inter;
+      font-size: 12.72px;
+      font-weight: 500;
+      line-height: 25.45px;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none;
+
+    }
+    .setting-more-section{
+      width: 259px;
+      height:40px;
+      display: flex;
+      /* justify-content: space-evenly; */
+      align-items: center;
+      /* margin-right: 100px; */
+    }
+    .setting-btn{
+      width: 40px;
+      height: 40px;
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px 0px 0px 0px;
+      border: 1px solid rgba(208, 213, 221, 1);
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+      color: rgba(91, 104, 113, 1);
+      margin-right: 8px;
+
+    }
+    .more-btn{
+      width: 40px;
+      height: 40px;
+      padding: 8px;
+      gap: 8px;
+      border-radius: 6px;
+      border: 1px 0px 0px 0px;
+      border: 1px solid rgba(208, 213, 221, 1);
+      /* margin-right: 8px; */
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+      color: rgba(91, 104, 113, 1);
+
+
+    }
+    .add-task-btn{
+      width: 163px;
+      height: 40px;
+      padding: 8px 0px 8px 0px;
+      gap: 8px;
+      border-radius: 6px;
+      background: rgba(0, 125, 250, 1);
+      border: none;
+      color:white;
+      margin-right: 8px;
+
+    }
+    .filter-sort-view-section{
+      margin-top: 15px;
+      border-bottom:1px rgba(221, 226, 228, 1);
+
+    }
+
+  .bug-table {
+    width: 1160px !important;
+    border-collapse: collapse;
+    margin-top: 24px;
+    margin-left: 80px !important;
+    
+  }
+  
+  .bug-table th,
+  .bug-table td {
+    height: 53px;
+
+  }
+  .bug-table th{
+    font-family: 'Poppins' sans-serif;
+    font-size: 12.36px;
+    font-weight: 600;
+    line-height: 24.72px;
+    letter-spacing: 0.17513321340084076px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(58, 53, 65, 0.87);
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+
+    
+  }
+  .bug-table td {
+
+    font-family: 'Poppins' sans-serif;
+    font-size: 14.36px;
+    font-weight: 400;
+    line-height: 23.84px;
+    letter-spacing: 0.4120781421661377px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(58, 53, 65, 0.68);
+    text-align: center;
+    width: 1100px !important;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+
+
+  }
+  
+  .bug-table th {
+    background-color: #f4f4f4;
+  }
+  
+
+  .action-dropdown {
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 25px;
+    right: 0;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    width: 150px;
+  }
+  
+  .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    background: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-item:hover {
+    background: #f0f0f0;
+  }
+  
+  .dropdown-item.active {
+    background: #007bff;
+    color: white;
+  }
+  

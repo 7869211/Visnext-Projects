@@ -1,0 +1,24 @@
+{
+ "host": "localhost",
+ "port": 5000,
+ "secretKey": "secret",
+ "frontendUrl": "http://localhost:3000",
+ "debug": true,
+ "timeouts": {
+   "login": "1d",
+   "refreshToken": "7d"
+ },
+ "database": {
+  "client": "postgres",
+  "connection": "postgres://postgres:123@localhost:5432/temp_app",
+  "host": "localhost",
+  "username": "postgres",
+  "port": 5432,
+  "password": "123",
+  "name": "temp_app",
+  "pool": {
+    "min": 2,
+    "max": 10
+  }
+}
+}

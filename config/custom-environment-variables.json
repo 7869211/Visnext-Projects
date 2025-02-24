@@ -1,0 +1,19 @@
+{
+  "host": "HOST",
+  "port": "PORT",
+  "timeouts": {
+    "login": "LOGIN_TIMEOUT",
+    "refreshToken": "REFRESH_TOKEN_TIMEOUT"
+  },
+  "database": {
+   "client": "DB_CLIENT",
+   "connection": "DB_CONNECTION_STRING",
+   "pool": {
+     "min": "DB_POOL_MIN",
+     "max": "DB_POOL_MAX"
+   },
+   "migrations": {
+     "tableName": "DB_MIGRATIONS_TABLE_NAME"
+   }
+  }
+ }
